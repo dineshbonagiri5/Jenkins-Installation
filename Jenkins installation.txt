@@ -1,0 +1,11 @@
+Jenkins installation in amazon linux ec2 :
+
+Step 1 : sudo dnf update
+step 2 : sudo dnf install java-17-amazon-corretto -y
+step 3 : java -version
+step 4 : sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+step 5 : sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+step 6 : sudo dnf install jenkins -y
+step 7 : sudo systemctl enable jenkins
+step 8 : sudo systemctl start jenkins
